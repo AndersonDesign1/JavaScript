@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Operators and Conditionals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="practical.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm">
+      <h2 class="text-2xl font-bold mb-4 text-center">Login</h2>
+
+      <label class="block mb-2 font-medium">Name:</label>
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="Enter your name"
+        class="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <label class="block mb-2 font-medium">Role:</label>
+      <select
+        id="roleInput"
+        class="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button
+        id="loginBtn"
+        class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition"
+      >
+        Login
+      </button>
+
+      <div
+        id="message"
+        class="mt-4 text-center text-lg font-semibold text-gray-700"
+      ></div>
+    </div>
+  </body>
+</html>
